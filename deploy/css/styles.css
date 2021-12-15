@@ -431,6 +431,51 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #D87337;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+  padding: 16px 0;
+}
+footer > div {
+  grid-area: footer;
+}
+footer > div section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div aside {
+  margin-top: -10px;
+  display: flex;
+  justify-content: flex-end;
+}
+footer > div aside ul {
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+}
+footer > div aside ul li {
+  margin-left: 16px;
+}
+footer > div aside ul li a:link,
+footer > div aside ul li a:visited {
+  color: #fff;
+  transition: 0.25s;
+}
+footer > div aside ul li a:link:hover, footer > div aside ul li a:link:active,
+footer > div aside ul li a:visited:hover,
+footer > div aside ul li a:visited:active {
+  color: #000;
+}
+@media (min-width: 1440px) {
+  footer > div aside ul li a:link,
+footer > div aside ul li a:visited {
+    font-size: 1.875rem;
+  }
+}
+
 /* =============
     Hero
 ============= */
@@ -554,14 +599,19 @@ textarea {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   #gallery {
     display: grid;
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". gallery .";
   }
 }
 @media (min-width: 1440px) {
+  #gallery {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+@media (min-width: 768px) {
   #gallery > div {
     grid-area: gallery;
   }
@@ -612,5 +662,59 @@ textarea {
 @media (min-width: 768px) {
   #gallery > div ul #gallery-3 {
     grid-area: g3;
+  }
+}
+
+#callout {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". callout .";
+}
+@media (min-width: 1440px) {
+  #callout {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#callout > div {
+  grid-area: callout;
+}
+#callout > div #circle-img {
+  background-image: url("../img/callout/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #callout > div #circle-img {
+    width: 50vw;
+    height: 50vw;
+    background-position: 0px 0px;
+  }
+}
+@media (min-width: 768px) {
+  #callout > div #circle-img {
+    width: 40vw;
+    height: 40vw;
+  }
+}
+@media (min-width: 1440px) {
+  #callout > div #circle-img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+#callout > div p {
+  line-height: 1.875rem;
+  font-size: 1.125rem;
+  margin-top: 16px;
+  text-align: justify;
+  padding: 0 15%;
+}
+@media (min-width: 1440px) {
+  #callout > div p {
+    padding: 0 25%;
   }
 }

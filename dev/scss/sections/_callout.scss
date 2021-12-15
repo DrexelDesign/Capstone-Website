@@ -1,0 +1,57 @@
+#callout {
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". callout .";
+
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
+
+    >div {
+
+        grid-area: callout;
+
+        // text-align: center;
+
+        #circle-img {
+            background-image: url("../img/callout/hero.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90vw;
+            height: 90vw;
+            border-radius: 100%;
+            margin: 0 auto;
+            // background-position: -20px -30px;
+
+            @include md {
+                width: 50vw;
+                height: 50vw;
+                background-position: 0px 0px;
+                // border: 1px solid red;
+            }
+
+            @include md {
+                width: 40vw;
+                height: 40vw;
+            }
+
+            @include xl {
+                width: 10vw;
+                height: 10vw;
+            }
+        }
+
+        p {
+            line-height: rem-calc(30);
+            font-size: rem-calc(18);
+            margin-top: 16px;
+            text-align: justify;
+            padding: 0 15%;
+
+            @include xl {
+                padding: 0 25%;
+            }
+        }
+    }
+}
