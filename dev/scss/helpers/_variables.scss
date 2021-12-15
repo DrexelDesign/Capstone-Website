@@ -10,12 +10,16 @@ $screen-sm-min: 576px;
 $screen-md-min: 768px;
 
 // Large tablets and small desktops
-$screen-lg-min: 992px;
+$screen-lg-min: 1024px;
 
 // Large desktops
-$screen-xl-min: 1200px;
+$screen-xl-min: 1440px;
+
+// Super Large desktops
+$screen-xxl-min: 2240px;
 
 // Colors
 $white: #fff;
 $black: #000;
+$orange: #D87337;
 

@@ -365,6 +365,25 @@ ul li {
   list-style: none;
 }
 
+.content {
+  padding: 32px 0;
+}
+@media (min-width: 768px) {
+  .content {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    padding: 56px 0;
+  }
+}
+@media (min-width: 1440px) {
+  .content {
+    padding: 64px 0;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -420,24 +439,117 @@ textarea {
   background-size: cover;
   background-position: center;
   height: 60vh;
-  text-align: center;
 }
-#hero div {
-  height: 50vh;
-  border: 6px solid red;
+@media (min-width: 768px) {
+  #hero {
+    height: 70vh;
+  }
+}
+@media (min-width: 1024px) {
+  #hero {
+    height: 80vh;
+  }
 }
 #hero div h1 {
   font-weight: 300;
   font-size: 2.75rem;
   color: #fff;
+  text-align: center;
 }
 @media (min-width: 768px) {
   #hero div h1 {
     font-size: 3.75rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   #hero div h1 {
+    padding-top: 10%;
+    padding-left: 10%;
+    text-align: left;
     font-size: 5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  #believe {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". believe .";
+  }
+}
+#believe > div {
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #believe > div {
+    grid-template-columns: 38vw auto;
+    grid-template-areas: "believe-l believe-r";
+  }
+}
+@media (min-width: 1024px) {
+  #believe > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  #believe > div {
+    grid-area: believe;
+  }
+}
+#believe > div section {
+  margin: 0 16px;
+}
+@media (min-width: 768px) {
+  #believe > div section {
+    grid-area: believe-r;
+    display: flex;
+    align-items: center;
+  }
+}
+#believe > div section > div {
+  border-top: 3px solid #D87337;
+  border-bottom: 3px solid #D87337;
+  padding: 16px 0px;
+}
+#believe > div section > div h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+  padding-bottom: 16px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #believe > div section > div h1 {
+    font-size: 2.1875rem;
+    line-height: 2.1875rem;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  #believe > div section > div h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  #believe > div section > div p {
+    font-size: 1.125rem;
+  }
+}
+#believe > div aside {
+  background-image: url("../img/believe/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+@media (min-width: 768px) {
+  #believe > div aside {
+    grid-area: believe-l;
+    height: 50vh;
+  }
+}
+@media (min-width: 1024px) {
+  #believe > div aside {
+    height: 80vh;
   }
 }

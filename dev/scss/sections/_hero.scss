@@ -8,23 +8,23 @@
     background-size: cover;
     background-position: center;
     height: 60vh;
-    text-align: center;
-
+    
     @include md{
-        // height: 70vh;
+        height: 70vh;
     }
 
     @include lg{
-        // height: 80vh;
+        height: 80vh;
     }
 
    div{
-       height: 50vh;
-       border: 6px solid red;
+    //    height: 50vh;
+    //    border: 6px solid red;
     h1{
         font-weight: 300;
         font-size: rem-calc(44);
         color: $white;
+        text-align: center;
         // padding-top: 20%;
 
         @include md{
@@ -33,10 +33,11 @@
         }
 
         @include lg{
-            // padding-top: 10%;
+            padding-top: 10%;
+            padding-left: 10%;
+            text-align: left;
             font-size: rem-calc(80);
         }
     }
    }
-    
 }           

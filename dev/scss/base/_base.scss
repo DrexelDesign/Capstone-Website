@@ -14,3 +14,19 @@ ul {
         list-style: none;
     }
 }
+
+.content{
+    padding: 32px 0;
+
+    @include md{
+        padding: 48px 0;    
+    }
+
+    @include lg{
+        padding: 56px 0;
+    }
+
+    @include xl{
+        padding: 64px 0;
+    }
+}

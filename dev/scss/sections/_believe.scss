@@ -1,0 +1,95 @@
+#believe {
+    // border: 1px solid red;
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". believe .";
+    }
+
+    >div {
+        // border: 1px solid red;
+
+        display: grid;
+        gap: 24px;
+
+        @include md {
+            grid-template-columns: 38vw auto;
+            grid-template-areas: "believe-l believe-r";
+        }
+
+        @include lg {
+            // grid-template-columns: 50vw auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include xl{
+            grid-area: believe;
+        }
+
+        section {
+
+            margin: 0 16px;
+
+            @include md {
+                grid-area: believe-r;
+                display: flex;
+                align-items: center;
+            }
+
+            >div {
+                border-top: 3px solid $orange;
+                border-bottom: 3px solid $orange;
+                padding: 16px 0px;
+
+                h1 {
+                    font-family: 'Nunito', sans-serif;
+                    font-size: rem-calc(25);
+                    line-height: rem-calc(28);
+                    padding-bottom: 16px;
+                    text-align: center;
+
+                    @include md {
+                        font-size: rem-calc(35);
+                        line-height: rem-calc(35);
+                        text-align: left;
+                    }
+
+                    @include xl {
+                        font-size: rem-calc(40);
+                    }
+                }
+
+                p {
+
+                    @include md {
+                        font-size: rem-calc(18);
+                    }
+
+                }
+            }
+
+        }
+
+        aside {
+
+            background-image: url("../img/believe/hero.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+
+            @include md {
+                grid-area: believe-l;
+                height: 50vh;
+            }
+
+            @include lg {
+                height: 80vh;
+            }
+
+            // img{
+            //     width: 100%;
+            // }
+        }
+    }
+}
