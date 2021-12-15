@@ -1,0 +1,71 @@
+#gallery {
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". gallery .";
+    }
+
+    >div {
+
+        @include xl {
+            grid-area: gallery;
+        }
+
+        ul {
+            display: grid;
+            gap: 24px;
+            // grid-template-rows: 70vh 70vh 70vh;
+            grid-template-rows: repeat(3, 70vh);
+
+            @include md {
+                // grid-template-columns: 50vh auto;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 70vh 35vh;
+                grid-template-areas:
+                    "g1 g1"
+                    "g2 g3";
+            }
+
+            @include xl {
+                grid-template-columns: 60% auto;
+                grid-template-rows: 35vh 35vh;
+                grid-template-areas:
+                    "g1 g2"
+                    "g1 g3";
+            }
+
+            li {
+                background-size: cover;
+                background-position: center;
+                // height: 70vh;
+                // border: 1px solid red;
+            }
+
+            #gallery-1 {
+                background-image: url("../img/gallery/gallery-1.jpg");
+
+                @include md {
+                    background-position: bottom;
+                    grid-area: g1;
+                }
+            }
+
+            #gallery-2 {
+                background-image: url("../img/gallery/gallery-2.jpg");
+
+                @include md {
+                    grid-area: g2;
+                }
+            }
+
+            #gallery-3 {
+                background-image: url("../img/gallery/gallery-3.jpg");
+
+                @include md {
+                    grid-area: g3;
+                }
+            }
+        }
+    }
+}
