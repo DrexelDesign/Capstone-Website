@@ -114,7 +114,7 @@
     },
     "\/deploy\/img\/believe\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 211468,
+      "iS" : 177181,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/believe\/hero.jpg",
@@ -127,7 +127,7 @@
     },
     "\/deploy\/img\/callout\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 146920,
+      "iS" : 136452,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/callout\/hero.jpg",
@@ -150,7 +150,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-1.jpg" : {
       "ft" : 16384,
-      "iS" : 400207,
+      "iS" : 296053,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-1.jpg",
@@ -163,7 +163,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-2.jpg" : {
       "ft" : 16384,
-      "iS" : 93081,
+      "iS" : 120769,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-2.jpg",
@@ -176,7 +176,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-3.jpg" : {
       "ft" : 16384,
-      "iS" : 175334,
+      "iS" : 255869,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-3.jpg",
@@ -189,7 +189,7 @@
     },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 584541,
+      "iS" : 365490,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.jpg",
@@ -207,6 +207,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 0
+    },
+    "\/deploy\/js\/scripts-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dev\/content\/believe.kit" : {
       "cB" : 0,
@@ -256,6 +267,14 @@
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 1
     },
+    "\/dev\/global\/scripts.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/scripts.html",
+      "oF" : 0
+    },
     "\/dev\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -263,6 +282,17 @@
       "oA" : 0,
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
+    },
+    "\/dev\/js\/scripts.js" : {
+      "bF" : 4,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/deploy\/js\/scripts-min.js",
+      "oF" : 2,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dev\/scss\/base\/_base.scss" : {
       "aP" : 0,
@@ -488,6 +518,28 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/package.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     }
   },
   "hooks" : [
@@ -1120,7 +1172,7 @@
         "optionString" : "{'allowParens': true}"
       },
       "no-console" : {
-        "active" : 1,
+        "active" : 0,
         "optionString" : "{'allow': ['warn', 'error']}"
       },
       "no-const-assign" : {

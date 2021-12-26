@@ -40,34 +40,45 @@
             }
 
             li {
-                background-size: cover;
-                background-position: center;
-                // height: 70vh;
-                // border: 1px solid red;
+                
+
+                a:link, a:visited{
+                    background-size: cover;
+                    background-position: center;
+                    height: 100%;
+                    width: 100%;
+                    display: inline-block;
+                }
             }
 
             #gallery-1 {
-                background-image: url("../img/gallery/gallery-1.jpg");
-
                 @include md {
                     background-position: bottom;
                     grid-area: g1;
                 }
+
+                a{
+                    background-image: url("../img/gallery/gallery-1.jpg");
+                }
             }
 
             #gallery-2 {
-                background-image: url("../img/gallery/gallery-2.jpg");
-
                 @include md {
                     grid-area: g2;
+                }
+
+                a{
+                    background-image: url("../img/gallery/gallery-2.jpg");
                 }
             }
 
             #gallery-3 {
-                background-image: url("../img/gallery/gallery-3.jpg");
-
+                
                 @include md {
                     grid-area: g3;
+                }
+                a{
+                    background-image: url("../img/gallery/gallery-3.jpg");
                 }
             }
         }
