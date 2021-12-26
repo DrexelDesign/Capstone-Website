@@ -428,6 +428,39 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+}
+header > div {
+  display: grid;
+  grid-template-columns: 20% auto;
+  padding: 16px;
+}
+header > div section img {
+  cursor: pointer;
+}
+header > div nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+header > div nav ul li {
+  margin-left: 20px;
+}
+header > div nav ul li button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+  transition: 0.25s;
+  cursor: pointer;
+}
+header > div nav ul li button:hover {
+  color: #D87337;
+}
+
 /* =============
     Footer
 ============= */
