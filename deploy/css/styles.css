@@ -436,19 +436,75 @@ header {
 header > div {
   display: grid;
   grid-template-columns: 20% auto;
-  padding: 16px;
+  grid-template-areas: "logo burger" "nav nav";
+  padding: 0px 16px 0;
 }
-header > div section img {
+@media (min-width: 1024px) {
+  header > div {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "logo nav";
+  }
+}
+header > div #logo {
+  grid-area: logo;
+}
+header > div #logo img {
   cursor: pointer;
+  width: 60%;
+  padding: 16px 0;
+}
+@media (min-width: 1024px) {
+  header > div #logo img {
+    width: 30%;
+  }
+}
+header > div #burger {
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  font-size: 1.875rem;
+}
+@media (min-width: 1024px) {
+  header > div #burger {
+    display: none !important;
+  }
+}
+header > div nav {
+  grid-area: nav;
+  background-color: #000;
+  padding: 16px 16px;
+  margin: 0 -16px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  header > div nav {
+    display: block;
+    background-color: #fff;
+  }
 }
 header > div nav ul {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
 }
+@media (min-width: 1024px) {
+  header > div nav ul {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 header > div nav ul li {
-  margin-left: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  header > div nav ul li {
+    margin-left: 20px;
+    margin-bottom: 0;
+  }
 }
 header > div nav ul li button {
   border: none;
@@ -456,6 +512,12 @@ header > div nav ul li button {
   font-size: 1.25rem;
   transition: 0.25s;
   cursor: pointer;
+  color: #fff;
+}
+@media (min-width: 1024px) {
+  header > div nav ul li button {
+    color: #000;
+  }
 }
 header > div nav ul li button:hover {
   color: #D87337;

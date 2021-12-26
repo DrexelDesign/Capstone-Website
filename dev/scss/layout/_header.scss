@@ -3,29 +3,80 @@
 ============= */
 header{
     position: fixed;
+    // z-index: 100;
     width: 100%;
     background-color: $white;
     
     >div{
         display: grid;
         grid-template-columns: 20% auto;
-        padding: 16px;
+        grid-template-areas: "logo burger"
+        "nav nav";
+        padding: 0px 16px 0;
 
-        section{
+        @include lg{
+            grid-template-columns: 20% auto;
+            grid-template-areas: "logo nav";
+        }
+
+        #logo{
+            grid-area: logo;
             img{
                 cursor: pointer;
+                width: 60%;
+                padding: 16px 0;
+
+                @include lg{
+                    width: 30%;
+                }
+            }
+        }
+
+        #burger{
+            grid-area: burger;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100%;
+            font-size: rem-calc(30);
+            
+
+            @include lg{
+                display: none !important;
             }
         }
 
         nav{
+            grid-area: nav;
+            background-color: $black;
+            padding: 16px 16px;
+            margin: 0 -16px;
+            display: none;
+
+            @include lg{
+                display: block;
+                background-color: $white;
+            }
+
             ul{
                 display: flex;
+                flex-direction: column;
                 justify-content: flex-end;
-                align-items: center;
+                align-items: flex-end;
                 height: 100%;
+
+                @include lg{
+                    flex-direction: row;
+                    align-items: center;
+                }
     
                 li{
-                    margin-left: 20px;
+                    margin-bottom: 20px;
+
+                    @include lg{
+                        margin-left: 20px;
+                        margin-bottom: 0;
+                    }
     
                     button{
                         border: none;
@@ -33,6 +84,11 @@ header{
                         font-size: rem-calc(20);
                         transition: 0.25s;
                         cursor: pointer;
+                        color: $white;
+
+                        @include lg{
+                            color: $black;
+                        }
     
                         &:hover{
                             color: $orange;
