@@ -482,6 +482,7 @@ header > div nav {
   header > div nav {
     display: block;
     background-color: #fff;
+    display: block !important;
   }
 }
 header > div nav ul {
