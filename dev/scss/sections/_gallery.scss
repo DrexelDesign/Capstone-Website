@@ -1,6 +1,6 @@
 #gallery {
 
-    @include md{
+    @include md {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". gallery .";
@@ -16,69 +16,33 @@
             grid-area: gallery;
         }
 
-        ul {
-            display: grid;
-            gap: 24px;
-            // grid-template-rows: 70vh 70vh 70vh;
-            grid-template-rows: repeat(3, 70vh);
+        .carousel {
+            color: #170724;
 
-            @include md {
-                // grid-template-columns: 50vh auto;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 70vh 35vh;
-                grid-template-areas:
-                    "g1 g1"
-                    "g2 g3";
-            }
+            --carousel-button-bg: #fff;
+            --carousel-button-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
 
-            @include xl {
-                grid-template-columns: 60% auto;
-                grid-template-rows: 35vh 35vh;
-                grid-template-areas:
-                    "g1 g2"
-                    "g1 g3";
-            }
+            --carousel-button-svg-width: 20px;
+            --carousel-button-svg-height: 20px;
+            --carousel-button-svg-stroke-width: 2.5;
 
-            li {
-                
+            .carousel__slide {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                a:link, a:visited{
-                    background-size: cover;
-                    background-position: center;
-                    height: 100%;
+                overflow: hidden;
+
+                width: 80%;
+                height: 50vh;
+                margin-right: 6px;
+
+                // background-color: #eee;
+                border-radius: 6px;
+
+                img {
                     width: 100%;
-                    display: inline-block;
-                }
-            }
-
-            #gallery-1 {
-                @include md {
-                    background-position: bottom;
-                    grid-area: g1;
-                }
-
-                a{
-                    background-image: url("../img/gallery/gallery-1.jpg");
-                }
-            }
-
-            #gallery-2 {
-                @include md {
-                    grid-area: g2;
-                }
-
-                a{
-                    background-image: url("../img/gallery/gallery-2.jpg");
-                }
-            }
-
-            #gallery-3 {
-                
-                @include md {
-                    grid-area: g3;
-                }
-                a{
-                    background-image: url("../img/gallery/gallery-3.jpg");
+                //    border: 1px solid red;
                 }
             }
         }
