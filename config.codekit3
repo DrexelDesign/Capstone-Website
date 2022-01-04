@@ -7,7 +7,7 @@
       "uuidString" : "BB21E139-11AF-4FD3-81C3-6865D42E67A7"
     }
   ],
-  "creatorBuild" : "34324",
+  "creatorBuild" : "34335",
   "files" : {
     "\/assets\/harley-davidson-9yx3FyexTOU-unsplash.jpg" : {
       "ft" : 16384,
@@ -114,7 +114,7 @@
     },
     "\/deploy\/img\/believe\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 211468,
+      "iS" : 177181,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/believe\/hero.jpg",
@@ -127,7 +127,7 @@
     },
     "\/deploy\/img\/callout\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 146920,
+      "iS" : 136452,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/callout\/hero.jpg",
@@ -150,7 +150,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-1.jpg" : {
       "ft" : 16384,
-      "iS" : 400207,
+      "iS" : 296053,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-1.jpg",
@@ -163,7 +163,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-2.jpg" : {
       "ft" : 16384,
-      "iS" : 93081,
+      "iS" : 120769,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-2.jpg",
@@ -176,7 +176,7 @@
     },
     "\/deploy\/img\/gallery\/gallery-3.jpg" : {
       "ft" : 16384,
-      "iS" : 175334,
+      "iS" : 255869,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/gallery\/gallery-3.jpg",
@@ -189,7 +189,7 @@
     },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
-      "iS" : 584541,
+      "iS" : 365490,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/hero.jpg",
