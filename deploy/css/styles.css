@@ -430,7 +430,10 @@ textarea {
 ============= */
 header {
   position: fixed;
+  z-index: 10000;
   width: 100%;
+  top: 0;
+  left: 0;
   background-color: #fff;
 }
 header > div {
@@ -441,7 +444,6 @@ header > div {
 }
 @media (min-width: 1024px) {
   header > div {
-    grid-template-columns: 20% auto;
     grid-template-areas: "logo nav";
   }
 }

@@ -3,19 +3,22 @@
 ============= */
 header{
     position: fixed;
-    // z-index: 100;
+    z-index: 10000;
     width: 100%;
+    top:0;
+    left: 0;
     background-color: $white;
     
     >div{
         display: grid;
         grid-template-columns: 20% auto;
-        grid-template-areas: "logo burger"
+        grid-template-areas: 
+        "logo burger"
         "nav nav";
         padding: 0px 16px 0;
 
         @include lg{
-            grid-template-columns: 20% auto;
+            // grid-template-columns: 20% auto;
             grid-template-areas: "logo nav";
         }
 
@@ -69,6 +72,7 @@ header{
                 @include lg{
                     flex-direction: row;
                     align-items: center;
+                    // justify-content: space-between;
                 }
     
                 li{
