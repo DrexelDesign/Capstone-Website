@@ -404,6 +404,10 @@ p {
 /* =============
     Buttons
 ============= */
+.fancybox__button--close {
+  color: purple !important;
+}
+
 /* =============
     Forms
 ============= */
