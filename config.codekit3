@@ -187,6 +187,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/logo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/logo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
       "iS" : 365490,
@@ -266,6 +276,14 @@
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 1
+    },
+    "\/dev\/global\/header.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/global\/header.html",
+      "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
